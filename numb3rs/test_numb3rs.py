@@ -2,7 +2,7 @@ from numb3rs import validate
 
 def test_false():
     assert validate("192.126") == False
-    assert validate("192") == False
+    assert validate("75.456.76.65") == False
     assert validate("192.126.1111.0") == False
     assert validate("cat") == False
     
