@@ -3,7 +3,7 @@ from tabulate import tabulate
 
 def prettier(menu_path):
     try:
-        if menu_path.endswith(".csv") == False:
+        if not menu_path.endswith(".csv"):
             sys.exit("Not a CSV file")
         with open(menu_path) as f:
             menu = []
