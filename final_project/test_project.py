@@ -16,7 +16,6 @@ def test_file_read_success(mock_csv_data):
         assert flashcards == [['question', 'answer'], ['Q1', 'A1'], ['Q2', 'A2']]
 
 
-
 def test_get_file_command_line(monkeypatch):
     monkeypatch.setattr('sys.argv', ['script_name.py', 'dummy_path.csv'])
     monkeypatch.setattr('os.path.exists', lambda path: True)
